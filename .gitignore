@@ -1,2 +1,8 @@
 Zameen/obj/
 Zameen/bin/Debug/Zameen.vshost.exe.manifest
+EF/bin/
+EF/obj/
+packages/EntityFramework.6.1.3/
+packages/Microsoft.Web.Xdt.2.1.1/
+packages/NuGet.Core.2.14.0/
+Zameen/bin/

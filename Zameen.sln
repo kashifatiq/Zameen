@@ -1,7 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zameen", "Zameen\Zameen.csproj", "{AF280344-1AA0-4EA7-94DC-BA7D70BE67B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlReader", "Zameen\HtmlReader.csproj", "{AF280344-1AA0-4EA7-94DC-BA7D70BE67B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbUpdator", "DbUpdator\DbUpdator.csproj", "{337662CE-5BEA-40EF-9E09-FDD6DCEDE172}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EF", "EF\EF.csproj", "{93818451-BA08-4A52-AC95-C0002DF8AD07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +17,14 @@ Global
 		{AF280344-1AA0-4EA7-94DC-BA7D70BE67B9}.Debug|x86.Build.0 = Debug|x86
 		{AF280344-1AA0-4EA7-94DC-BA7D70BE67B9}.Release|x86.ActiveCfg = Release|x86
 		{AF280344-1AA0-4EA7-94DC-BA7D70BE67B9}.Release|x86.Build.0 = Release|x86
+		{337662CE-5BEA-40EF-9E09-FDD6DCEDE172}.Debug|x86.ActiveCfg = Debug|x86
+		{337662CE-5BEA-40EF-9E09-FDD6DCEDE172}.Debug|x86.Build.0 = Debug|x86
+		{337662CE-5BEA-40EF-9E09-FDD6DCEDE172}.Release|x86.ActiveCfg = Release|x86
+		{337662CE-5BEA-40EF-9E09-FDD6DCEDE172}.Release|x86.Build.0 = Release|x86
+		{93818451-BA08-4A52-AC95-C0002DF8AD07}.Debug|x86.ActiveCfg = Debug|x86
+		{93818451-BA08-4A52-AC95-C0002DF8AD07}.Debug|x86.Build.0 = Debug|x86
+		{93818451-BA08-4A52-AC95-C0002DF8AD07}.Release|x86.ActiveCfg = Release|x86
+		{93818451-BA08-4A52-AC95-C0002DF8AD07}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
