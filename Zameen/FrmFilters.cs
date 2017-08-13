@@ -6,12 +6,12 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using EF;
+
 namespace HtmlReader
 {
     public partial class FrmFilters : Form
     {
-        
+        ProjectEntities _db = new ProjectEntities();
         public FrmFilters()
         {
             InitializeComponent();
@@ -21,7 +21,14 @@ namespace HtmlReader
         {
             try
             {
-               
+                SearchFilter newSearchFilter = new SearchFilter();
+                newSearchFilter.Description = txtDescription.Text.Trim();
+                newSearchFilter.FilterText = txtFilterText.Text.Trim();
+                newSearchFilter.Title = txtTitle.Text.Trim();
+                _db.SearchFilters.AddObject(newSearchFilter);
+                _db.SaveChanges();
+                MessageBox.Show("Data Saved", "Data base operation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                
             }
             catch (Exception ex)
             {

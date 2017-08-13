@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="ProjectModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="ProjectModelStoreContainer">
+          <EntitySet Name="AppSettings" EntityType="ProjectModel.Store.AppSettings" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SearchFilter" EntityType="ProjectModel.Store.SearchFilter" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="AppSettings">
+          <Key>
+            <PropertyRef Name="AppSettingID" />
+          </Key>
+          <Property Name="AppSettingID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AppSettingName" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="AppSettingValue" Type="varchar(max)" Nullable="false" />
+          <Property Name="Description" Type="varchar(max)" Nullable="false" />
+        </EntityType>
+        <EntityType Name="SearchFilter">
+          <Key>
+            <PropertyRef Name="SearchFilterID" />
+          </Key>
+          <Property Name="SearchFilterID" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="FilterText" Type="varchar(max)" Nullable="false" />
+          <Property Name="Title" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="Description" Type="varchar(max)" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ProjectModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="ProjectEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AppSettings" EntityType="ProjectModel.AppSetting" />
+          <EntitySet Name="SearchFilters" EntityType="ProjectModel.SearchFilter" />
+        </EntityContainer>
+        <EntityType Name="AppSetting">
+          <Key>
+            <PropertyRef Name="AppSettingID" />
+          </Key>
+          <Property Name="AppSettingID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AppSettingName" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="AppSettingValue" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="SearchFilter">
+          <Key>
+            <PropertyRef Name="SearchFilterID" />
+          </Key>
+          <Property Name="SearchFilterID" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FilterText" Type="String" Nullable="false" MaxLength="Max" Unicode="false" FixedLength="false" />
+          <Property Name="Title" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="false" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ProjectModelStoreContainer" CdmEntityContainer="ProjectEntities">
+          <EntitySetMapping Name="AppSettings">
+            <EntityTypeMapping TypeName="ProjectModel.AppSetting">
+              <MappingFragment StoreEntitySet="AppSettings">
+                <ScalarProperty Name="AppSettingID" ColumnName="AppSettingID" />
+                <ScalarProperty Name="AppSettingName" ColumnName="AppSettingName" />
+                <ScalarProperty Name="AppSettingValue" ColumnName="AppSettingValue" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SearchFilters">
+            <EntityTypeMapping TypeName="ProjectModel.SearchFilter">
+              <MappingFragment StoreEntitySet="SearchFilter">
+                <ScalarProperty Name="SearchFilterID" ColumnName="SearchFilterID" />
+                <ScalarProperty Name="FilterText" ColumnName="FilterText" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="ProjectEF">
+        <EntityTypeShape EntityType="ProjectModel.AppSetting" Width="1.5" PointX="0.75" PointY="0.75" Height="1.787985026041667" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjectModel.SearchFilter" Width="1.5" PointX="2.75" PointY="0.75" Height="1.7879850260416674" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
