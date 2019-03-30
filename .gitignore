@@ -6,3 +6,5 @@ packages/EntityFramework.6.1.3/
 packages/Microsoft.Web.Xdt.2.1.1/
 packages/NuGet.Core.2.14.0/
 Zameen/bin/
+DbUpdator/bin/
+DbUpdator/obj/

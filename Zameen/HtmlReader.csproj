@@ -93,6 +93,7 @@
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Common.cs" />
+    <Compile Include="Helpers\DisplayMessages.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProjectEF.Designer.cs">
       <AutoGen>True</AutoGen>

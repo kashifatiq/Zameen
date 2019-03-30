@@ -1,9 +1,0 @@
-D:\Projects\Zameen\DbUpdator\bin\Debug\DbUpdator.exe.config
-D:\Projects\Zameen\DbUpdator\obj\x86\Debug\DbUpdator.Properties.Resources.resources
-D:\Projects\Zameen\DbUpdator\obj\x86\Debug\DbUpdator.csproj.GenerateResource.Cache
-D:\Projects\Zameen\DbUpdator\obj\x86\Debug\DbUpdator.Form1.resources
-D:\Projects\Zameen\DbUpdator\bin\Debug\DbUpdator.exe
-D:\Projects\Zameen\DbUpdator\bin\Debug\DbUpdator.pdb
-D:\Projects\Zameen\DbUpdator\obj\x86\Debug\DbUpdator.exe
-D:\Projects\Zameen\DbUpdator\obj\x86\Debug\DbUpdator.pdb
-D:\Projects\Zameen\DbUpdator\obj\x86\Debug\DbUpdator.csprojResolveAssemblyReference.cache

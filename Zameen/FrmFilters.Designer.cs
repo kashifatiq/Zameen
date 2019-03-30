@@ -171,6 +171,7 @@
             this.Name = "FrmFilters";
             this.ShowIcon = false;
             this.Text = "Filters";
+            this.Load += new System.EventHandler(this.FrmFilters_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgFilter)).EndInit();
